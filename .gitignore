@@ -1,0 +1,7 @@
+# Node modules
+node_modules/
+npm-debug.log*
+
+# Tailwind output files
+dist/output.css
+dist/output.css.map
