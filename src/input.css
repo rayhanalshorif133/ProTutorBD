@@ -36,3 +36,8 @@
 .bg-secondary {
     background: #F76622!important;
 }
+
+.owl-carousel .owl-item img {
+    width: auto!important;
+    height: auto;
+}
