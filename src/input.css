@@ -41,3 +41,23 @@
     width: auto!important;
     height: auto;
 }
+
+.owl-dot{
+    background: #F76622!important;
+    border-radius: 50%!important;
+    width: 10px!important;
+    height: 10px!important;
+    margin: 0 5px!important;
+    opacity: 1!important;
+    transition: all 0.3s ease-in-out!important;
+
+}
+
+.owl-dot.active{
+    background: #204B93!important;
+    width: 15px!important;
+    height: 15px!important;
+    margin: 0 5px!important;
+    opacity: 1!important;
+    transition: all 0.3s ease-in-out!important;
+}
