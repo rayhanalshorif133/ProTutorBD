@@ -1,6 +1,12 @@
 @import "tailwindcss";
 
 
+:root {
+    --color-primary: #204B93;
+    --color-secondary: #F76622;
+}
+
+
 .font-roboto {
     font-family: "Roboto", sans-serif;
 }
@@ -22,27 +28,27 @@
 }
 
 .text-primary {
-    color: #204B93!important;
+    color: var(--color-primary) !important;
 }
 
 .bg-primary {
-    background: #204B93!important;
+    background: var(--color-primary) !important;
 }
 
 .text-secondary {
-    color: #F76622!important;
+    color: var(--color-secondary) !important;
 }
 
 .bg-secondary {
-    background: #F76622!important;
+    background: var(--color-secondary) !important;
 }
 
 .owl-carousel .owl-item img {
-    width: auto!important;
+    width: auto !important;
     height: auto;
 }
 
-.owl-dot{
+/* .owl-dot{
     background: #F76622!important;
     border-radius: 50%!important;
     width: 10px!important;
@@ -60,4 +66,24 @@
     margin: 0 5px!important;
     opacity: 1!important;
     transition: all 0.3s ease-in-out!important;
+} */
+
+
+@layer components {
+    .title {
+        @apply font-bold text-center w-fit mx-auto relative py-2 text-3xl mt-10 pb-2;
+        color: var(--color-primary) !important;
+    }
+
+    .title div:nth-child(1) {
+        @apply h-1 z-10 absolute w-2/5 left-1/2 transform -translate-x-1/2 mt-1;
+        background-color: var(--color-secondary) !important;
+    }
+
+    .title div:nth-child(2) {
+        @apply z-0 absolute w-full mx-auto;
+        background-color: var(--color-secondary) !important;
+        margin-top: 0.35rem;
+        height: 1px;
+    }
 }

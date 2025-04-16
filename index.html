@@ -10,8 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <!-- <link href="./dist/output.css" rel="stylesheet"> -->
-    <link href="./dist/build.css" rel="stylesheet">
+    <link href="./dist/output.css" rel="stylesheet">
 
 </head>
 
@@ -134,15 +133,13 @@
             </div>
         </div>
 
-        <div class="bg-[#E7EFFF] h-full w-full pb-5">
-            <h1 class="text-primary font-bold text-center py-2 text-3xl">
-                Nearest Tutors
-                <div class="bg-secondary h-[3px] w-20 mx-auto justify-center flex mt-1"></div>
+        <div class="bg-[#E7EFFF] h-full w-full pb-2 pt-10">
+            <h1 class="title">Nearest Tutors
+                <div></div>
+                <div></div>
             </h1>
             <div class="mt-5 flex relative justify-center xl:max-w-7xl mx-auto items-center">
-                <div class="w-full sm:w-11/12 home_nearest_tutor_container">
-
-                </div>
+                <div class="w-full sm:w-11/12 home_nearest_tutor_container"></div>
                 <div class="w-full absolute z-10 justify-between hidden sm:flex home_nearest_tutors_nav">
                     <div class="rounded-sm p-2 home_nearest_tutors_prev">
                         <i class="fa-solid fa-chevron-left text-gray-700 text-2xl py-2 cursor-pointer"></i>
@@ -154,9 +151,9 @@
             </div>
         </div>
         <div class="h-full w-full my-5">
-            <h1 class="text-primary font-bold text-center py-2 text-3xl">
-                Find Your Subject Specialist
-                <div class="bg-secondary h-[3px] w-40 mx-auto justify-center flex mt-1"></div>
+            <h1 class="title"> Find Your Subject Specialist 
+                <div></div>
+                <div></div>
             </h1>
             <p class="text-gray-500 font-semibold text-center text-lg pb-5">Find Our Specialist to reach your dream goal
             </p>
@@ -238,7 +235,7 @@
                 html += ` <div class="item">
                 <div class="bg-white cursor-pointer hover:bg-gray-100 w-64 sm:w-full mx-auto item rounded-2xl border border-gray-400 h-full         shadow-md flex flex-col justify-center items-center space-y-3">
                     <div class="flex justify-center items-center py-5 w-3xs">
-                        <img src="./images/user_profile_logo.png" />
+                        <img src="./images/user_profile_logo.png" class="h-5 w-5"/>
                     </div>
                     <div class="px-2 py-1 flex flex-col justify-center space-y-1 items-center">
                         <h1 class="font-inter font-bold text-2xl">${profile.name}</h1>
