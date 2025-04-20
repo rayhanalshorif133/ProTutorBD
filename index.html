@@ -126,8 +126,13 @@
                                     class="fa-solid fa-arrow-right transition-all group-hover:translate-x-2"></i></p>
                         </div>
                     </div>
-                    <div>
-                        <img src="./images/home_pic.png" class="h-40 sm:h-full w-auto" />
+                    <div class="home_pic_container h-auto sm:h-[22rem]">
+                        <div class="item">
+                            <img src="./images/home_pic_1.png" class="h-40 sm:h-full w-full block" alt="">
+                        </div>
+                        <div class="item hidden">
+                            <img src="./images/home_pic_2.png" class="h-40 sm:h-full w-full block" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -151,11 +156,12 @@
             </div>
         </div>
         <div class="h-full w-full my-5">
-            <h1 class="title"> Find Your Subject Specialist 
+            <h1 class="title"> Find Your Subject Specialist
                 <div></div>
                 <div></div>
             </h1>
-            <p class="text-gray-500 font-semibold text-center text-lg pb-5">Find Our Specialist to reach your dream goal
+            <p class="text-gray-500 font-semibold text-center text-sm sm:text-md pb-5">Find Our Specialist to reach your
+                dream goal
             </p>
             <div class="mb-10">
                 <div class="grid grid-cols-4 gap-4 mx-auto xl:max-w-7xl px-5 xl:px-0">
@@ -186,17 +192,34 @@
                 </div>
             </div>
         </div>
+        <div class="bg-primary">
+            <div class="mx-auto xl:max-w-7xl justify-between flex py-5">
+                <div>
+                    <h1 class="font-semibold text-white text-xl capitalize">Follow Us</h1>
+                    <div class="flex justify-center items-center space-x-2">
+                        <a href="#" class="block decoration-0"><i
+                                class="fa-brands fa-facebook text-white text-2xl py-2 cursor-pointer"></i></a>
+                        <a href="#" class="block decoration-0"><i
+                                class="fa-brands fa-instagram text-white text-2xl py-2 cursor-pointer"></i></a>
+                        <a href="#" class="block decoration-0"><i
+                                class="fa-brands fa-twitter text-white text-2xl py-2 cursor-pointer"></i></a>
+                        <a href="#" class="block decoration-0"><i
+                                class="fa-brands fa-linkedin text-white text-2xl py-2 cursor-pointer"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
-    <script src="./dist/app.min.js"></script>
-    
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <script src="./src/app.js"></script>
+
 </body>
 
 </html>

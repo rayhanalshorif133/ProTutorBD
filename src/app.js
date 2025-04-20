@@ -34,7 +34,7 @@ $(() => {
             starsHtml += `<img src="./images/rating.png" class="h-5 w-auto" />`;
         }
 
-        html += ` <div class="item">
+        html += `<div class="item">
                 <div class="bg-white cursor-pointer hover:bg-gray-100 w-64 sm:w-full mx-auto item rounded-2xl border border-gray-400 h-full         shadow-md flex flex-col justify-center items-center space-y-3">
                     <div class="flex justify-center items-center py-5 w-3xs">
                         <img src="./images/user_profile_logo.png" class="h-5 w-5"/>
@@ -98,6 +98,22 @@ $(() => {
     $(".owl-dots button").html("");
 
 
+
+
+    const home_pic_container = $(".home_pic_container");
+
+
+    const home_pic_items = home_pic_container.find(".item");
+    let currentIndex = 0;
+    let totalItems = home_pic_items.length;
+
+    setInterval(() => {
+        home_pic_items.eq(currentIndex).slideUp(900, function () {
+            $(this).addClass("hidden");
+            currentIndex = (currentIndex + 1) % totalItems;
+            home_pic_items.eq(currentIndex).removeClass("hidden").hide().slideDown(900);
+        });
+    }, 5000);
 
 
 });
