@@ -71,7 +71,7 @@
 
 @layer components {
     .title {
-        @apply font-bold text-center w-fit mx-auto relative py-2 text-3xl mt-10 pb-2;
+        @apply font-bold text-center w-fit mx-auto relative py-2 text-xl sm:text-2xl xl:text-3xl mt-10 pb-2;
         color: var(--color-primary) !important;
     }
 
